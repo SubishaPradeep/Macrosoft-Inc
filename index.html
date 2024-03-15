@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="./assests/css/fonts.css"  rel="stylesheet">
+    <link href="./assests/css/style.css"  rel="stylesheet">
+    <link href="./assests/css/responsive.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="grid-7-3">
+            <div class="image-wrap">
+                <img src="./assests/images/logib-bg.jpg" alt="">
+            </div>
+            <div class="form-wrap poppins-regular" id="form">
+                <h2 class="poppins-bold">Sign up</h2>
+                <form>
+                    <div class="form-group"  id="full-name">
+                        <label class="poppins-medium" for="">Full Name</label>
+                        <input class="poppins-light" type="text" onKeyUp="validateName(this , 'fullName')" placeholder="Name...">
+                    </div>
+                    <div class="form-group" id="email">
+                        <label class="poppins-medium" for="">Email</label>
+                        <input class="poppins-light" type="email" onKeyUp="validateEmail(this  , 'email')"  placeholder="Email Address...">
+                    </div>
+                    <div class="form-group" id="user-name">
+                        <label class="poppins-medium" for="">Username</label>
+                        <input class="poppins-light" type="text"  onKeyUp="validateName(this  , 'userName')" placeholder="Username...">
+                    </div>
+                    <div class="form-group" id="password">
+                        <label class="poppins-medium" for="">password</label>
+                        <input class="poppins-light" type="password" onKeyUp="validatePassword(this  , 'password')" placeholder="*************">
+                    </div>
+                    <div class="form-group" id="repeat-password">
+                        <label class="poppins-medium" for="">Repeat password</label>
+                        <input class="poppins-light" type="password" onKeyUp="validateConfirmPwd(this  , 'repeatPassword' , 'password')" placeholder="*************">
+                    </div>
+                    <div class="form-group single-line" id="terms-policy">
+                        <input class="poppins-light" value=true type="checkbox"  onchange="validatePolicy(this  , 'policy')">
+                        <label for="">I Agree to the <span class="user-terms">terms of User</span></label>
+                    </div>
+                    <div class="btn-group">
+                        <button type="submit" id="btn-submit" class="btn-bg poppins-semibold">Sign Up</button>
+                        <button class="btn-text">Sign In</button>
+
+                    </div>
+
+                </form>
+            </div>
+        </div>                   
+    </div>
+    <script  type = "text/javascript" src="./assests/js/index.js"></script>
+</body>
+</html>

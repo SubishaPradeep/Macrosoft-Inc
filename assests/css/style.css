@@ -1,0 +1,123 @@
+html , body{
+  font-size: 10px;
+  line-height: 1;
+
+}
+img{
+  max-width: 100%;
+}
+input , button{
+  outline: none;
+  border: none;
+}
+button{
+  cursor: pointer;
+}
+.form-wrap input:focus{
+  border-color: #5f313d;
+}
+.container{
+    max-width: 1110px;
+    margin: 2rem auto;
+    padding: 8px;
+    box-shadow: 1px 1px 9px 1px #ccc ;
+}
+.form-wrap h2{
+    font-size: 2.6rem;
+    margin: 0 0 3rem 0;
+}
+.grid-7-3{
+    display: flex;
+}
+.image-wrap{
+    flex: 1 1 70%;
+    /* width: 70%; */
+}
+.form-wrap{
+    flex: 1 1 30%;
+    /* width: 70%; */
+
+    padding: 5rem 3rem 3rem 4rem;
+}
+.form-group{
+  margin-bottom: 3rem;
+  width: 100%;
+  position: relative;
+}
+.single-line{
+  display: flex;
+}
+.form-group label{
+  font-size: 1.6rem;
+  color: #777777;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+.form-group input{
+  width: 100%;
+  font-size: 1.6rem;
+  color: #b6b6b6;
+  padding: 1rem 0 1.5rem;
+  border-bottom: 1px solid #b6b6b6;
+}
+.form-group span:not(.user-terms){
+  font-size:1.2rem;
+  color:red;
+  position: absolute;
+  bottom:-15px;
+  left:0;
+  font-family: "Poppins", sans-serif;
+}
+.single-line span:not(.user-terms){
+  top:18px;
+}
+.single-line label{
+  padding-left: 7px;
+}
+.form-group [type="checkbox"]{
+  width: 1.3rem;
+  height: 1.3rem;
+}
+.form-group [type="checkbox"] + label{
+  font-size: 1.4rem;
+  color: #b6b6b6;
+}
+.form-group [type="checkbox"] + label span{
+  color: #4a4a4a;
+  text-transform: capitalize;
+}
+.btn-group{
+  font-size: 1.4rem;
+  display: flex;
+}
+.btn-bg{
+  padding: 1rem 7rem;
+  color: #fff;
+  margin-right: 5rem;
+  background: linear-gradient(  #7b90e9, #9f58e4);
+  border-radius: 30px;
+  white-space: nowrap;
+}
+.btn-text{
+  color:#313131;
+  background-image: url(../images/right-arrow.png);
+  background-position: right;
+  width: 9.5rem;
+  background-color: transparent;
+  background-repeat: no-repeat;
+}
+.form-error{
+  position: fixed;
+  font-size: 2.4rem;
+  top: 50%;
+  left: 50%;
+  color: #313131;
+  transform: translate(-50%,-50%);
+  padding: 8rem 5rem;
+  box-shadow: 1px 1px 9px 1px #ccc;
+  background-color: #f7f2f2;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  border-radius: 5px;
+}
+

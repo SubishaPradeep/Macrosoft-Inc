@@ -1,0 +1,93 @@
+@media only screen and (max-width:1600px){
+    .form-wrap {
+        padding: 4rem 3rem 1rem 3rem;
+    }
+    .container {
+        max-width: 990px
+    }
+}
+@media only screen and (max-width:1200px){
+    .container {
+        max-width: 890px;
+        margin:4rem auto;
+    }
+    html{
+        font-size: 9px;
+    }
+    .form-wrap {
+        padding: 3rem 3rem 1rem 3rem;
+    }
+}
+@media only screen and (max-width:991px){
+    
+    .container {
+        max-width: 90%;
+        margin: 1rem auto;
+    }
+    .image-wrap {
+        flex: 1 1 100%;
+        height: 100%;
+
+    }
+    .image-wrap img{
+        width: 100%;
+        height: 100%;
+    }
+    .grid-7-3{
+        position: relative;
+        height: 100vh;
+    }
+    .form-wrap{
+        position: absolute;
+        background-color: #fff;
+        background-color: rgb(255 255 255 / 90%);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        padding: 3rem 5rem 4rem 5rem;
+    }
+    .form-group input{
+        background-color: transparent;
+    }
+    .form-error{
+        width: 80%;
+        padding: 5rem;
+    }
+}
+@media only screen and (max-width:768px){
+    .form-wrap{
+        padding: 3rem;
+    }
+    .grid-7-3{
+        height: auto;}
+    .form-group{
+        margin-bottom: 1.8rem;
+    }
+    html{
+        font-size: 8px;
+    }
+}
+@media only screen and (max-width:600px){
+    html{
+        font-size: 7px;
+    }
+    .form-wrap{
+        padding: 2.5rem;
+    }
+    .form-group input{
+        padding: .5rem 0 1.5rem
+    }
+    .form-wrap h2{
+        margin-bottom: 1.8rem;
+    }
+   
+    .form-error{
+        padding: 3rem;
+    }
+    .single-line span:not(.user-terms){
+        top:13px;
+      }
+      .form-group span:not(.user-terms){
+        bottom:-12px;
+      }
+}
